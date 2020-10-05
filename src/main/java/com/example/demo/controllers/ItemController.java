@@ -34,29 +34,22 @@ public class ItemController {
 	public ResponseEntity<Item> getItemById(@PathVariable Long id) {
 		Optional<Item> item = itemRepository.findById(id);
 		if(!item.isPresent()) {
-			log.info("Item finding by id failed, id {} does not exist", id);
+			log.error("Item finding by id failed, id does not exist: {}", id);
 			return ResponseEntity.notFound().build();
 		}
-		log.info("Item finding by id succeeded for id {}", id);
+		log.info("Item finding by id succeeded for id: {}", id);
 		return ResponseEntity.of(item);
-
-		//return ResponseEntity.of(itemRepository.findById(id));
 	}
 	
 	@GetMapping("/name/{name}")
 	public ResponseEntity<List<Item>> getItemsByName(@PathVariable String name) {
 		List<Item> items = itemRepository.findByName(name);
 		if(items == null || items.isEmpty()) {
-			log.info("Items finding by name failed, item by name {} does not exist", name);
+			log.error("Items finding by name failed, item by name does not exist: {}", name);
 			return ResponseEntity.notFound().build();
 		}
-		log.info("Items finding by name succeeded for item {}", name);
+		log.info("Items finding by name succeeded for item: {}", name);
 		return ResponseEntity.ok(items);
-
-
-		//return items == null || items.isEmpty() ? ResponseEntity.notFound().build()
-		//		: ResponseEntity.ok(items);
-			
 	}
 	
 }

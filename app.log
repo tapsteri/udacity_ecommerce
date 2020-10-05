@@ -1,0 +1,114 @@
+2020-10-05 19:37:46,731|INFO|com.example.demo.EcommerceApplication|[main]|Starting EcommerceApplication on DESKTOP-HIGTAG5 with PID 10600 (C:\Users\Public\jdnd_repo\udacity_ecommerce\target\classes started by tapikivi in C:\Users\Public\jdnd_repo\udacity_ecommerce)
+2020-10-05 19:37:46,752|INFO|com.example.demo.EcommerceApplication|[main]|No active profile set, falling back to default profiles: default
+2020-10-05 19:37:49,346|INFO|org.apache.catalina.core.StandardService|[main]|Starting service [Tomcat]
+2020-10-05 19:37:49,347|INFO|org.apache.catalina.core.StandardEngine|[main]|Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-05 19:37:49,593|INFO|org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]|[main]|Initializing Spring embedded WebApplicationContext
+2020-10-05 19:37:49,827|INFO|com.zaxxer.hikari.HikariDataSource|[main]|HikariPool-1 - Starting...
+2020-10-05 19:37:50,068|INFO|com.zaxxer.hikari.HikariDataSource|[main]|HikariPool-1 - Start completed.
+2020-10-05 19:37:50,139|INFO|org.hibernate.jpa.internal.util.LogHelper|[main]|HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-05 19:37:50,228|INFO|org.hibernate.Version|[main]|HHH000412: Hibernate Core {5.3.10.Final}
+2020-10-05 19:37:50,230|INFO|org.hibernate.cfg.Environment|[main]|HHH000206: hibernate.properties not found
+2020-10-05 19:37:50,430|INFO|org.hibernate.annotations.common.Version|[main]|HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-05 19:37:50,600|INFO|org.hibernate.dialect.Dialect|[main]|HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-05 19:37:52,764|INFO|com.example.demo.EcommerceApplication|[main]|Started EcommerceApplication in 6.898 seconds (JVM running for 7.69)
+2020-10-05 19:37:59,404|INFO|org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]|[http-nio-8080-exec-2]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-05 19:37:59,560|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-2]|User creation failed, password too short or passwords don't match: Alice
+2020-10-05 19:38:07,453|INFO|com.example.demo.controllers.UserController|[http-nio-8080-exec-4]|User created successfully: Bob
+2020-10-05 19:38:18,690|INFO|org.hibernate.hql.internal.QueryTranslatorFactoryInitiator|[http-nio-8080-exec-5]|HHH000397: Using ASTQueryTranslatorFactory
+2020-10-05 19:38:45,885|INFO|com.example.demo.controllers.UserController|[http-nio-8080-exec-6]|User finding succeeded for user: Bob
+2020-10-05 19:38:52,575|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-7]|User finding by name failed, user does not exist: Alice
+2020-10-05 19:39:09,523|INFO|com.example.demo.controllers.CartController|[http-nio-8080-exec-8]|Cart addition succeeded for user: Bob
+2020-10-05 19:39:25,017|ERROR|com.example.demo.controllers.CartController|[http-nio-8080-exec-9]|Cart addition failed, item does not exist: 3
+2020-10-05 19:39:31,524|ERROR|com.example.demo.controllers.CartController|[http-nio-8080-exec-10]|Cart addition failed, user does not exist: Alice
+2020-10-05 19:40:10,208|ERROR|com.example.demo.controllers.OrderController|[http-nio-8080-exec-1]|Order saving failed, user does not exist: Alice
+2020-10-05 19:40:16,294|INFO|com.example.demo.controllers.OrderController|[http-nio-8080-exec-2]|Order saving succeeded for user: Bob
+2020-10-05 19:40:29,504|ERROR|com.example.demo.controllers.OrderController|[http-nio-8080-exec-3]|Order history listing failed, user does not exist: Alice
+2020-10-05 19:42:20,496|INFO|com.example.demo.controllers.ItemController|[http-nio-8080-exec-6]|Item get all
+2020-10-05 19:42:30,611|INFO|com.example.demo.controllers.ItemController|[http-nio-8080-exec-7]|Item finding by id succeeded for id: 1
+2020-10-05 19:42:35,921|ERROR|com.example.demo.controllers.ItemController|[http-nio-8080-exec-8]|Item finding by id failed, id does not exist: 3
+2020-10-05 19:42:45,078|INFO|com.example.demo.controllers.ItemController|[http-nio-8080-exec-9]|Items finding by name succeeded for item: Square Widget
+2020-10-05 19:42:55,015|ERROR|com.example.demo.controllers.ItemController|[http-nio-8080-exec-10]|Items finding by name failed, item by name does not exist: Mysterious Widget
+2020-10-05 19:43:03,228|INFO|com.example.demo.controllers.ItemController|[http-nio-8080-exec-1]|Items finding by name succeeded for item: Square Widget
+2020-10-05 19:43:16,266|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-2]|User finding by id failed, id does not exist: 2
+2020-10-05 19:43:19,875|INFO|com.example.demo.controllers.UserController|[http-nio-8080-exec-3]|User finding by id succeeded for id: 1
+2020-10-05 19:43:32,099|INFO|com.example.demo.controllers.CartController|[http-nio-8080-exec-4]|Cart addition succeeded for user: Bob
+2020-10-05 19:43:44,661|ERROR|com.example.demo.controllers.CartController|[http-nio-8080-exec-5]|Cart removal failed, user does not exist: Alice
+2020-10-05 19:43:50,252|ERROR|com.example.demo.controllers.CartController|[http-nio-8080-exec-6]|Cart removal failed, item does not exist: 3
+2020-10-05 19:43:54,962|INFO|com.example.demo.controllers.CartController|[http-nio-8080-exec-7]|Cart removal succeeded for user: Bob
+2020-10-05 19:44:20,387|INFO|com.example.demo.controllers.OrderController|[http-nio-8080-exec-8]|Order history listing succeeded for user: Bob
+2020-10-05 19:48:54,482|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-1]|User creation failed, password too short or passwords don't match: John
+2020-10-05 19:49:06,792|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-3]|User creation failed, password too short or passwords don't match: John
+2020-10-05 19:49:12,323|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-4]|User creation failed, password too short or passwords don't match: John
+2020-10-05 19:49:16,187|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-7]|User creation failed, password too short or passwords don't match: John
+2020-10-05 19:49:20,980|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-8]|User creation failed, password too short or passwords don't match: John
+2020-10-05 19:49:25,428|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-1]|User creation failed, password too short or passwords don't match: John
+2020-10-05 19:49:46,129|INFO|com.example.demo.controllers.OrderController|[http-nio-8080-exec-3]|Order history listing succeeded for user: Bob
+2020-10-05 19:49:49,062|INFO|com.example.demo.controllers.OrderController|[http-nio-8080-exec-5]|Order history listing succeeded for user: Bob
+2020-10-05 19:49:50,003|INFO|com.example.demo.controllers.OrderController|[http-nio-8080-exec-4]|Order history listing succeeded for user: Bob
+2020-10-05 19:49:50,924|INFO|com.example.demo.controllers.OrderController|[http-nio-8080-exec-6]|Order history listing succeeded for user: Bob
+2020-10-05 19:49:53,542|INFO|com.example.demo.controllers.OrderController|[http-nio-8080-exec-7]|Order history listing succeeded for user: Bob
+2020-10-05 19:49:54,668|INFO|com.example.demo.controllers.OrderController|[http-nio-8080-exec-9]|Order history listing succeeded for user: Bob
+2020-10-05 19:49:56,075|INFO|com.example.demo.controllers.OrderController|[http-nio-8080-exec-8]|Order history listing succeeded for user: Bob
+2020-10-05 19:50:15,281|INFO|com.example.demo.controllers.CartController|[http-nio-8080-exec-10]|Cart addition succeeded for user: Bob
+2020-10-05 19:50:28,852|INFO|com.example.demo.controllers.CartController|[http-nio-8080-exec-1]|Cart addition succeeded for user: Bob
+2020-10-05 19:50:47,692|INFO|com.example.demo.controllers.CartController|[http-nio-8080-exec-2]|Cart removal succeeded for user: Bob
+2020-10-05 19:50:51,606|INFO|com.example.demo.controllers.CartController|[http-nio-8080-exec-3]|Cart removal succeeded for user: Bob
+2020-10-05 19:50:57,897|INFO|com.example.demo.controllers.OrderController|[http-nio-8080-exec-5]|Order saving succeeded for user: Bob
+2020-10-05 19:51:02,417|INFO|com.example.demo.controllers.OrderController|[http-nio-8080-exec-4]|Order history listing succeeded for user: Bob
+2020-10-05 19:51:43,328|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-6]|User creation failed, password too short or passwords don't match: Mark
+2020-10-05 19:51:46,975|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-9]|User creation failed, password too short or passwords don't match: Mark
+2020-10-05 19:51:47,916|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-10]|User creation failed, password too short or passwords don't match: Mark
+2020-10-05 19:51:48,637|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-1]|User creation failed, password too short or passwords don't match: Mark
+2020-10-05 19:51:49,173|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-5]|User creation failed, password too short or passwords don't match: Mark
+2020-10-05 19:51:49,764|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-6]|User creation failed, password too short or passwords don't match: Mark
+2020-10-05 19:51:50,124|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-7]|User creation failed, password too short or passwords don't match: Mark
+2020-10-05 19:51:50,533|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-10]|User creation failed, password too short or passwords don't match: Mark
+2020-10-05 19:51:50,981|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-1]|User creation failed, password too short or passwords don't match: Mark
+2020-10-05 19:51:51,292|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-5]|User creation failed, password too short or passwords don't match: Mark
+2020-10-05 19:51:56,278|INFO|com.example.demo.controllers.UserController|[http-nio-8080-exec-6]|User created successfully: Mark
+2020-10-05 19:52:27,368|INFO|com.example.demo.controllers.OrderController|[http-nio-8080-exec-9]|Order history listing succeeded for user: Bob
+2020-10-05 19:52:29,978|INFO|com.example.demo.controllers.OrderController|[http-nio-8080-exec-7]|Order history listing succeeded for user: Bob
+2020-10-05 19:52:30,688|INFO|com.example.demo.controllers.OrderController|[http-nio-8080-exec-8]|Order history listing succeeded for user: Bob
+2020-10-05 19:53:19,703|INFO|com.example.demo.controllers.OrderController|[http-nio-8080-exec-10]|Order history listing succeeded for user: Bob
+2020-10-05 19:53:20,903|INFO|com.example.demo.controllers.OrderController|[http-nio-8080-exec-2]|Order history listing succeeded for user: Bob
+2020-10-05 19:54:00,829|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-1]|User creation failed, password too short or passwords don't match: Gill
+2020-10-05 19:54:02,460|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-5]|User creation failed, password too short or passwords don't match: Gill
+2020-10-05 19:54:03,185|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-6]|User creation failed, password too short or passwords don't match: Gill
+2020-10-05 19:54:03,897|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-7]|User creation failed, password too short or passwords don't match: Gill
+2020-10-05 19:54:04,527|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-10]|User creation failed, password too short or passwords don't match: Gill
+2020-10-05 19:54:05,326|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-1]|User creation failed, password too short or passwords don't match: Gill
+2020-10-05 19:54:07,454|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-5]|User creation failed, password too short or passwords don't match: Gill
+2020-10-05 19:54:08,394|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-4]|User creation failed, password too short or passwords don't match: Gill
+2020-10-05 19:54:12,106|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-7]|User creation failed, password too short or passwords don't match: Gill
+2020-10-05 19:54:17,039|INFO|com.example.demo.controllers.UserController|[http-nio-8080-exec-10]|User created successfully: Gill
+2020-10-05 19:54:25,417|INFO|com.example.demo.controllers.ItemController|[http-nio-8080-exec-2]|Item get all
+2020-10-05 20:43:00,580|INFO|com.example.demo.EcommerceApplication|[main]|Starting EcommerceApplication on DESKTOP-HIGTAG5 with PID 8232 (C:\Users\Public\jdnd_repo\udacity_ecommerce\target\classes started by tapikivi in C:\Users\Public\jdnd_repo\udacity_ecommerce)
+2020-10-05 20:43:00,585|INFO|com.example.demo.EcommerceApplication|[main]|No active profile set, falling back to default profiles: default
+2020-10-05 20:43:03,666|INFO|org.apache.catalina.core.StandardService|[main]|Starting service [Tomcat]
+2020-10-05 20:43:03,667|INFO|org.apache.catalina.core.StandardEngine|[main]|Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-05 20:43:03,928|INFO|org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]|[main]|Initializing Spring embedded WebApplicationContext
+2020-10-05 20:43:04,224|INFO|com.zaxxer.hikari.HikariDataSource|[main]|HikariPool-1 - Starting...
+2020-10-05 20:43:04,561|INFO|com.zaxxer.hikari.HikariDataSource|[main]|HikariPool-1 - Start completed.
+2020-10-05 20:43:04,653|INFO|org.hibernate.jpa.internal.util.LogHelper|[main]|HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-05 20:43:04,808|INFO|org.hibernate.Version|[main]|HHH000412: Hibernate Core {5.3.10.Final}
+2020-10-05 20:43:04,813|INFO|org.hibernate.cfg.Environment|[main]|HHH000206: hibernate.properties not found
+2020-10-05 20:43:05,051|INFO|org.hibernate.annotations.common.Version|[main]|HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-05 20:43:05,303|INFO|org.hibernate.dialect.Dialect|[main]|HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-05 20:43:07,998|INFO|com.example.demo.EcommerceApplication|[main]|Started EcommerceApplication in 8.134 seconds (JVM running for 8.904)
+2020-10-05 20:43:16,108|INFO|org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]|[http-nio-8080-exec-1]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-05 20:43:16,271|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-1]|User creation failed, password too short or passwords don't match: Jill
+2020-10-05 20:43:17,670|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-2]|User creation failed, password too short or passwords don't match: Jill
+2020-10-05 20:43:18,476|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-6]|User creation failed, password too short or passwords don't match: Jill
+2020-10-05 20:43:19,000|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-8]|User creation failed, password too short or passwords don't match: Jill
+2020-10-05 20:43:20,072|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-10]|User creation failed, password too short or passwords don't match: Jill
+2020-10-05 20:43:20,581|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-1]|User creation failed, password too short or passwords don't match: Jill
+2020-10-05 20:43:21,861|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-2]|User creation failed, password too short or passwords don't match: Jill
+2020-10-05 20:44:10,036|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-6]|User creation failed, password too short or passwords don't match: Richard
+2020-10-05 20:44:38,027|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-8]|User creation failed, password too short or passwords don't match: Richard
+2020-10-05 20:44:41,609|INFO|com.example.demo.controllers.ItemController|[http-nio-8080-exec-10]|Item get all
+2020-10-05 20:44:41,628|INFO|org.hibernate.hql.internal.QueryTranslatorFactoryInitiator|[http-nio-8080-exec-10]|HHH000397: Using ASTQueryTranslatorFactory
+2020-10-05 20:45:10,487|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-3]|User creation failed, password too short or passwords don't match: Richard

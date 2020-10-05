@@ -39,10 +39,10 @@ public class UserController {
 	public ResponseEntity<User> findById(@PathVariable Long id) {
 		Optional<User> user = userRepository.findById(id);
 		if(!user.isPresent()) {
-			log.info("User finding by id failed, id {} does not exist", id);
+			log.error("User finding by id failed, id does not exist: {}", id);
 			return ResponseEntity.notFound().build();
 		}
-		log.info("User finding by id succeeded for id {}", id);
+		log.info("User finding by id succeeded for id: {}", id);
 		return ResponseEntity.of(user);
 	}
 	
@@ -50,10 +50,10 @@ public class UserController {
 	public ResponseEntity<User> findByUserName(@PathVariable String username) {
 		User user = userRepository.findByUsername(username);
 		if(user == null) {
-			log.info("User finding failed, user {} does not exist",username);
+			log.error("User finding by name failed, user does not exist: {}",username);
 			return ResponseEntity.notFound().build();
 		}
-		log.info("User finding succeeded for user {}",username);
+		log.info("User finding succeeded for user: {}",username);
 		return ResponseEntity.ok(user);
 	}
 	
@@ -67,12 +67,12 @@ public class UserController {
 		user.setCart(cart);
 		if(createUserRequest.getPassword().length() < 7 ||
 		!createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())) {
-			log.info("User {} creation failed, password too short or passwords don't match",createUserRequest.getUsername());
+			log.error("User creation failed, password too short or passwords don't match: {}",createUserRequest.getUsername());
 			return ResponseEntity.badRequest().build();
 		}
 		user.setPassword(bCryptPasswordEncoder.encode(createUserRequest.getPassword()));
 		userRepository.save(user);
-		log.info("User {} created successfully",createUserRequest.getUsername());
+		log.info("User created successfully: {}",createUserRequest.getUsername());
 		return ResponseEntity.ok(user);
 	}
 	
