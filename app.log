@@ -84,31 +84,3 @@
 2020-10-05 19:54:12,106|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-7]|User creation failed, password too short or passwords don't match: Gill
 2020-10-05 19:54:17,039|INFO|com.example.demo.controllers.UserController|[http-nio-8080-exec-10]|User created successfully: Gill
 2020-10-05 19:54:25,417|INFO|com.example.demo.controllers.ItemController|[http-nio-8080-exec-2]|Item get all
-2020-10-05 20:43:00,580|INFO|com.example.demo.EcommerceApplication|[main]|Starting EcommerceApplication on DESKTOP-HIGTAG5 with PID 8232 (C:\Users\Public\jdnd_repo\udacity_ecommerce\target\classes started by tapikivi in C:\Users\Public\jdnd_repo\udacity_ecommerce)
-2020-10-05 20:43:00,585|INFO|com.example.demo.EcommerceApplication|[main]|No active profile set, falling back to default profiles: default
-2020-10-05 20:43:03,666|INFO|org.apache.catalina.core.StandardService|[main]|Starting service [Tomcat]
-2020-10-05 20:43:03,667|INFO|org.apache.catalina.core.StandardEngine|[main]|Starting Servlet engine: [Apache Tomcat/9.0.19]
-2020-10-05 20:43:03,928|INFO|org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]|[main]|Initializing Spring embedded WebApplicationContext
-2020-10-05 20:43:04,224|INFO|com.zaxxer.hikari.HikariDataSource|[main]|HikariPool-1 - Starting...
-2020-10-05 20:43:04,561|INFO|com.zaxxer.hikari.HikariDataSource|[main]|HikariPool-1 - Start completed.
-2020-10-05 20:43:04,653|INFO|org.hibernate.jpa.internal.util.LogHelper|[main]|HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2020-10-05 20:43:04,808|INFO|org.hibernate.Version|[main]|HHH000412: Hibernate Core {5.3.10.Final}
-2020-10-05 20:43:04,813|INFO|org.hibernate.cfg.Environment|[main]|HHH000206: hibernate.properties not found
-2020-10-05 20:43:05,051|INFO|org.hibernate.annotations.common.Version|[main]|HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2020-10-05 20:43:05,303|INFO|org.hibernate.dialect.Dialect|[main]|HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2020-10-05 20:43:07,998|INFO|com.example.demo.EcommerceApplication|[main]|Started EcommerceApplication in 8.134 seconds (JVM running for 8.904)
-2020-10-05 20:43:16,108|INFO|org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]|[http-nio-8080-exec-1]|Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-10-05 20:43:16,271|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-1]|User creation failed, password too short or passwords don't match: Jill
-2020-10-05 20:43:17,670|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-2]|User creation failed, password too short or passwords don't match: Jill
-2020-10-05 20:43:18,476|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-6]|User creation failed, password too short or passwords don't match: Jill
-2020-10-05 20:43:19,000|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-8]|User creation failed, password too short or passwords don't match: Jill
-2020-10-05 20:43:20,072|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-10]|User creation failed, password too short or passwords don't match: Jill
-2020-10-05 20:43:20,581|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-1]|User creation failed, password too short or passwords don't match: Jill
-2020-10-05 20:43:21,861|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-2]|User creation failed, password too short or passwords don't match: Jill
-2020-10-05 20:44:10,036|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-6]|User creation failed, password too short or passwords don't match: Richard
-2020-10-05 20:44:38,027|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-8]|User creation failed, password too short or passwords don't match: Richard
-2020-10-05 20:44:41,609|INFO|com.example.demo.controllers.ItemController|[http-nio-8080-exec-10]|Item get all
-2020-10-05 20:44:41,628|INFO|org.hibernate.hql.internal.QueryTranslatorFactoryInitiator|[http-nio-8080-exec-10]|HHH000397: Using ASTQueryTranslatorFactory
-2020-10-05 20:45:10,487|ERROR|com.example.demo.controllers.UserController|[http-nio-8080-exec-3]|User creation failed, password too short or passwords don't match: Richard
