@@ -17,6 +17,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 //  1.0: First version for review
 //  1.1: Screenshots jenkins_build.png added
 //
+//
 //*******************************************************************
 
 @RunWith(SpringRunner.class)
